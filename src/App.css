@@ -1,0 +1,125 @@
+.App {
+  text-align: left;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color:white;
+}
+
+
+/*product card*/
+.card-container{
+  margin: 25px;
+  padding: 5px;
+}
+.card-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  align-content: space-between;
+  width: 1200px;
+  height: auto;
+}
+.card {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px 5px 5px 20px;
+  padding: 25px;
+  width: 250px;
+  height: 375px;
+  background-color: white;
+  border-style: groove;
+  border-color: black;
+  box-shadow: 5px 5px 10px gray;
+  border-radius: 10px;
+}
+.card-basket {
+  width: 200px;
+  height: 300px;
+}
+
+.card Button{
+  width: 100%;
+}
+.card .card-badge-span{
+  font-size: 12px;
+}
+.card .card-description {
+  font-size: 12px;
+}
+.card-img{
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 10px black;
+}
+.card a{
+  text-decoration: none;
+  color: black;
+}
+.card a:hover{
+  text-decoration: underline;
+  color: darkblue;
+}
+
+.slider {
+  width: 1200px;
+  align-items: center;
+  justify-content: center;
+}
+.slider-img {
+
+}
+
+.app{
+  width: 1200px;
+}
+
+.feedback-form {
+  margin:50px;
+  padding:50px;
+  width: 90%;
+}
