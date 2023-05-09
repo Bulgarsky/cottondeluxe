@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Button} from "react-bootstrap";
 import {AppContext} from '../../App';
 
-import "../../css/card.css"
+import "../../css/product_card.css"
 
 const ProductCard = (props) => {
     const context = React.useContext(AppContext);
@@ -37,7 +37,6 @@ const ProductCard = (props) => {
     return (
 
     <div class="card">
-        <div>
         {
             context.isFavorite(props.myId) === true ?
                 <Button className='addFavorite' variant='warning'
@@ -51,9 +50,7 @@ const ProductCard = (props) => {
                 </Button>
         }
         <br/>
-            <br/>
-        <h5>{props.title} {' '}
-        </h5>
+        <h5>{props.title} {' '}</h5>
             <div class="card-img-box">
                 <img className="card-img" alt="img card" src={props.img}/>
             </div>
@@ -73,7 +70,7 @@ const ProductCard = (props) => {
                 'Добавить в корзину'
             }
         </Button>
-        </div>
+
     </div>
 
 

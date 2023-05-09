@@ -1,60 +1,57 @@
-/*shopCart product card */
-.basket-card-container{
+/*product card*/
+.card-container{
     margin: 25px;
     padding: 5px;
 }
-.basket-card-box {
+.card-box {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: baseline;
     align-content: space-between;
-    width: 1200px;
+    width: 1120px;
     height: auto;
 }
-.basket-card {
+.card {
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: 10px 5px 5px 20px;
     padding: 10px;
-    width: 200px;
-    height: 310px;
-    background-color: white;
-
-    border-color: black;
+    width: 220px;
+    height: 350px;
     box-shadow: 5px 5px 10px gray;
     border-radius: 10px;
+
 }
 
-.basket-card Button{
+.card Button{
     width: 100%;
 }
-.basket-card .card-badge-span{
+.card .card-badge-span{
     font-size: 12px;
 }
-.basket-card-description {
+.card .card-description {
     font-size: 12px;
 }
-
-.basket-card-img-box {
-    width: 150px;
-    height: 100px;
+.card-img-box{
+    width: auto;
+    height: 130px;
 }
 
-.basket-card-img{
+.card-img{
     width: 100%;
     border-radius: 5px;
 }
 
-.basket-card:hover {
+.card:hover {
     box-shadow: 5px 5px 10px black;
 }
-.basket-card a{
+.card a{
     text-decoration: none;
     color: black;
 }
-.basket-card a:hover{
+.card a:hover{
     text-decoration: underline;
     color: darkblue;
 }

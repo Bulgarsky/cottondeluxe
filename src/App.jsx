@@ -6,7 +6,7 @@ import About from "./components/About/About";
 import Feedback from "./components/feedback/Feedback";
 import Products from "./components/Products";
 import Favorites from "./components/Favorites";
-import Basket from "./components/Basket";
+import ShoppingCart from "./components/ShoppingCart";
 import Orders from "./components/Orders";
 import Footer from "./components/Footer";
 
@@ -15,7 +15,6 @@ import axios from 'axios';
 import {Route, Routes, BrowserRouter as Router} from 'react-router-dom';
 
 import "./App.css";
-
 
 //npm install
 //npm install react-bootstrap bootstrap
@@ -113,8 +112,8 @@ function App() {
                               setOverlayItems={setOverlayItems}
                           />}
                       />
-                      <Route path='/basket' element={
-                          <Basket
+                      <Route path='/cart' element={
+                          <ShoppingCart
                               totalPrice={
                                 overlayItems.reduce((element = overlayItems.length, obj)=>
                                     element+Number(obj.price), 0
